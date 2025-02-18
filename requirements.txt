@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+nest_asyncio
+numpy
+matplotlib
