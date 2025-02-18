@@ -29,7 +29,7 @@ def parse_and_generate_values(complexity_str, n):
     elif complexity_str in ["nlogn", "nlog(n)", "n*logn", "n*log(n)", "o(nlogn)"]:
         return n * np.log2(n), "O(n log n)"
         
-    elif complexity_str in ["n2", "n^2", "nsquared", "quadratic", "o(n2)", "o(n^2)", "n**2x","n**2]:
+    elif complexity_str in ["n2", "n^2", "nsquared", "quadratic", "o(n2)", "o(n^2)", "n**2x","n**2"]:
         return n**2, "O(n²)"
         
     elif complexity_str in ["n3", "n^3", "ncubed", "cubic", "o(n3)", "o(n^3)", "n**3"]:
