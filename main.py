@@ -20,7 +20,7 @@ def parse_and_generate_values(complexity_str, n):
     if complexity_str in ["1", "c", "constant", "o(1)", "O(1)"]:
         return np.ones_like(n), "O(1)"
         
-    elif complexity_str in ["logn", "log(n)", "o(logn)", "o(log(n))"]:
+    elif complexity_str in ["log*n","logn", "log(n)", "o(logn)", "o(log(n))"]:
         return np.log2(n), "O(log n)"
         
     elif complexity_str in ["n", "linear", "o(n)"]:
