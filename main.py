@@ -23,7 +23,7 @@ def parse_and_generate_values(complexity_str, n):
     elif complexity_str in ["log*n","logn", "log(n)", "o(logn)", "o(log(n))"]:
         return np.log2(n), "O(log n)"
         
-    elif complexity_str in ["n", "linear", "o(n)"]:
+    elif complexity_str in ["n*m","m*n","n", "linear", "o(n)"]:
         return n, "O(n)"
         
     elif complexity_str in ["nlogn", "nlog(n)", "n*logn", "n*log(n)", "o(nlogn)"]:
